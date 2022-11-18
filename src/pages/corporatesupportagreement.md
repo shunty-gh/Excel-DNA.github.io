@@ -27,7 +27,7 @@ For more details, please contact us by email to [govert@dnakode.com](mailto:gove
 </p>
 <p>&nbsp;</p>
 <p>
-<a href="http://findynamics.com"><img className="float-image"src="/img/xbrl-analyst-logo.png" /> </a> "Excel-DNA is incredibly versatile and stable framework for building Excel add-ins and user-defined functions. With such a pivotal element in our project, we were very concerned about committing to Excel-DNA that was developed by an enthusiast. However, we quickly learned that Govert has created an outstanding open source project; that he is keen on helping with any challenging questions and that the community is active enough to sustain a healthy evolution of Excel-DNA."" – Ilya Vadeiko, <a href="http://findynamics.com/">FinDynamics</a>
+<a href="http://findynamics.com"><img className="float-image"src="/img/xbrl-analyst-logo.png" /> </a> "Excel-DNA is incredibly versatile and stable framework for building Excel add-ins and user-defined functions. With such a pivotal element in our project, we were very concerned about committing to Excel-DNA that was developed by an enthusiast. However, we quickly learned that Govert has created an outstanding open source project; that he is keen on helping with any challenging questions and that the community is active enough to sustain a healthy evolution of Excel-DNA." – Ilya Vadeiko, <a href="http://findynamics.com/">FinDynamics</a>
 </p>
 <p>&nbsp;</p>
 <p>
