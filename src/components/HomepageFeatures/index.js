@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Powered by .NET',
-    Svg: require('@site/static/img/placeholder.svg').default,
+    title: 'Use .NET',
+    img: require('@site/static/img/dotnet.png').default,
     description: (
       <>
         Excel-DNA is backed by powerful development tools (Visual Studio) and is accessible to many libraries. 
@@ -14,20 +14,20 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Easy Distribution',
-    Svg: require('@site/static/img/placeholder.svg').default,
+    title: 'Make User-Defined Functions',
+    img: require('@site/static/img/udf.png').default,
     description: (
       <>
-        Excel-DNA can create a single self-contained add-in (.xll) that can be easily distributed as no additional installation or registration is required.
+        With Excel-DNA it is possible to create customised functions that is supported by Excel's IntelliSense capabilities.
       </>
     ),
   },
   {
-    title: 'Free and Open Source',
-    Svg: require('@site/static/img/placeholder.svg').default,
+    title: 'Create Custom Ribbon Add-ins',
+    img: require('@site/static/img/ribbon.png').default,
     description: (
       <>
-        The Excel-DNA Runtime is free for all use, and distributed under a permissive open-source license that also allows commercial use.
+        Excel-DNA can enhance User Experience by creating in Excel custom UI components.
       </>
     ),
   },
@@ -65,11 +65,11 @@ function codetabclicked(lang) {
   }
 }
 
-function Feature({Svg, title, description}) {
+function Feature({img, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center"> 
-      <Svg className={styles.featureSvg} role="img" />
+      <img src={img} className={styles.featureImg}  />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -90,10 +90,13 @@ export default function HomepageFeatures() {
             <li>Select <b>Create a new project</b> and then select <b>Class Library</b> in either Visual Basic, C# or F#.</li>
             <li>Enter a name for the project.</li>
             <li> Under Framework, select the <b>.NET 6.0 (Long-term support)</b> option.</li>
+            <br />
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ftMz0tcc4wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
           <p>Once a new project was created, do the following:</p>
           <ol> 
-            <li>In the .csproj file, change the value between the <i>TargetFramework</i> tags to <b>net6.0-windows</b>.</li>
+           
+            <li>Depending on the language of choice, in the .csproj, .vbproj, or .fsproj file, change the value between the <i>TargetFramework</i> tags to <b>net6.0-windows</b>.</li>
             <li>Add the following under <i>&lt;/PropertyGroup></i>:
             <pre>&lt;ItemGroup&gt;<br />
 		             &nbsp;&nbsp;&nbsp;&nbsp;&lt;PackageReference Include="ExcelDna.Addin" Version="*-*"/&gt;<br />
@@ -108,46 +111,48 @@ export default function HomepageFeatures() {
                 </ul>
                 <div class="margin-top--md">
                   <div id="csharpcode" role="tabpanel" class="tabItem_node_modules-@docusaurus-theme-classic-lib-theme-TabItem-styles-module">
-                    <div class="language-csharp codeBlockContainer_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module theme-code-block" style={{color: `rgb(57, 58, 52)`, background: `rgb(246, 247, 248)`}}>
-                      <div class="codeBlockContent_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
-                        <pre tabindex="0" class="prism-code language-csharp codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar">
+                    <div>
+                      <div>
+                        <pre tabindex="0" class="thin-scrollbar">
                           <code class="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
                             <span class="token-line" style={{color: `rgb(57, 58, 52)`}}></span>
-                            <span class="token keyword" style={{color: `rgb(0, 0, 159)`}}>C# code here</span>
+                            <span class="token keyword">using&nbsp;ExcelDna.Integration;<br /><br />public&nbsp;static&nbsp;class&nbsp;MyFunctions<br />&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;[ExcelFunction(Description&nbsp;=&nbsp;"My&nbsp;first&nbsp;.NET&nbsp;function")]<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;static&nbsp;string&nbsp;SayHello(string&nbsp;name)<br />&nbsp;&nbsp;&nbsp;&nbsp;&#123;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;"Hello&nbsp;"&nbsp;+&nbsp;name;<br />&nbsp;&nbsp;&nbsp;&nbsp;&#125;<br />&#125;</span>
                           </code>
                         </pre>
                       </div>
                     </div>
                   </div>
                   <div id="vbnetcode" role="tabpanel" class="tabItem_node_modules-@docusaurus-theme-classic-lib-theme-TabItem-styles-module" hidden>
-                    <div class="language-vbnet codeBlockContainer_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module theme-code-block" style={{color: `rgb(57, 58, 52)`, background: `rgb(246, 247, 248)`}}>
-                      <div class="codeBlockContent_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
-                        <pre tabindex="0" class="prism-code language-vbnet codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar">
+                    <div>
+                      <div>
+                        <pre tabindex="0" class="thin-scrollbar">
                           <code class="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
                             <span class="token-line" style={{color: `rgb(57, 58, 52)`}}></span>
-                            <span class="token keyword" style={{color: `rgb(0, 0, 159)`}}>VB code here</span>
+                            <span class="token keyword">Imports ExcelDna.Integration<br /><br />Public&nbsp;Module&nbsp;MyFunctions<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;ExcelFunction(Description:="My&nbsp;first&nbsp;.NET&nbsp;function")&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Public&nbsp;Function&nbsp;SayHello(ByVal&nbsp;name&nbsp;As&nbsp;String)&nbsp;As&nbsp;String<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return&nbsp;"Hello&nbsp;"&nbsp;&amp;&nbsp;name<br />&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;Function<br />End&nbsp;Module</span>
                           </code>
                         </pre>
                       </div>
                     </div>
                   </div>
-                   <div id="fsharpcode" role="tabpanel" class="tabItem_node_modules-@docusaurus-theme-classic-lib-theme-TabItem-styles-module" hidden>
-                    <div class="language-fsharp codeBlockContainer_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module theme-code-block" style={{color: `rgb(57, 58, 52)`, background: `rgb(246, 247, 248)`}}>
-                      <div class="codeBlockContent_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
-                        <pre tabindex="0" class="prism-code language-fsharp codeBlock_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module thin-scrollbar">
+                  <div id="fsharpcode" role="tabpanel" class="tabItem_node_modules-@docusaurus-theme-classic-lib-theme-TabItem-styles-module" hidden>
+                    <div>
+                      <div>
+                        <pre tabindex="0" class="thin-scrollbar">
                           <code class="codeBlockLines_node_modules-@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module">
                             <span class="token-line" style={{color: `rgb(57, 58, 52)`}}></span>
-                            <span class="token keyword" style={{color: `rgb(0, 0, 159)`}}>F# code here</span>
+                            <span class="token keyword">module&nbsp;MyFunctions&nbsp;=&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;open&nbsp;Excel.Integration<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;[&lt;ExcelFunction(Description&nbsp;=&nbsp;"My&nbsp;first&nbsp;.NET&nbsp;function")&gt;]<br />&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;SayHello&nbsp;name&nbsp;=&nbsp;"Hello&nbsp;"&nbsp;+&nbsp;name</span>
                           </code>
                         </pre>
                       </div>
-                    </div>
+                     </div>
                   </div>
                 </div>   
               </div>
             </li>
-            <li>Compile, load and use your function in Excel:
+            <li>Compile, load and use the newly created function in Excel:
             <pre>=SayHello("World!")</pre></li>
+            <br />
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xCJqyLd7Je0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
         </div>
         <br />

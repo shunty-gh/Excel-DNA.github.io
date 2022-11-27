@@ -200,6 +200,13 @@ const config = {
                     </a>
                 `,
               },
+              {
+                html: `
+                    <a href="mailto:govert@dnakode.com" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
+                    <img src="/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
+                    </a>
+                `,
+              },
             ],
           },
         ],
