@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Excel-DNA',
   tagline: 'Free and easy .NET for Excel',
-  url: 'https://excel-dna.net',
-  baseUrl: '/',
+  url: 'https://excel-dna.github.io/',
+  baseUrl: '/TestDocs/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
