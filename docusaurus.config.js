@@ -10,7 +10,7 @@ const config = {
   tagline: 'Free and easy .NET for Excel',
   url: 'https://excel-dna.net',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
