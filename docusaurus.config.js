@@ -64,67 +64,20 @@ const config = {
           srcDark: 'img/logo_dark.svg',
         }, 
         items: [
-          {  //knowledge base start
-            type: 'dropdown',
+          {  //docs start
+            to: 'docs/intro',
             label: 'Docs',
             position: 'left',
-            items: [
-              {
-                type: 'doc',
-                docId: 'intro',
-                label: 'Introduction',
-              },
-              {
-                type: 'doc',
-                docId: 'getting-started/installation',
-                label: 'Getting Started',
-              },
-              {
-                type: 'doc',
-                docId: 'guides-basic/tempbasicguide',
-                label: 'Guides - Basic',
-              },
-              {
-                type: 'doc',
-                docId: 'guides-advanced/tempadvancedguide',
-                label: 'Guides - Advanced',
-              },
-            ],
-          }, //knowledge base end
-          {  //discussions start 
-            label: 'Discussions',
-            href: 'https://groups.google.com/g/exceldna',
-          }, //discussions end
-          {  //support start
-            type: 'dropdown',
-            label: 'Support',
-            position: 'left',
-            items: [
-              {
-                label: 'Getting Help',
-                to: 'gettinghelp'
-              },
-              {
-                label: 'Corporate Support Agreement',
-                to: 'corporatesupportagreement',
-              },
-              {
-                label: 'Sponsor',
-                href: 'https://github.com/sponsors/Excel-DNA',
-              },
-            ], //
-          }, //support end
-          //{
-          //  type: 'doc',
-          //  docId: 'hello',
-          //  position: 'left',
-          //  label: 'Tutorial',
-          //},
+          }, //docs end
           {
             to: '/blog', 
             label: 'Blog', 
             position: 'left',
           },
+          {  //discussions start 
+            label: 'Discussions',
+            href: 'https://groups.google.com/g/exceldna',
+          }, //discussions end
           {
             type: 'html',
             value: '<a href="https://github.com/Excel-DNA" target="_blank" rel="noopener noreferrer" class="header-github-link"></a>',
@@ -168,7 +121,7 @@ const config = {
               {
               html: `
                   <a href="https://www.youtube.com/user/govertvd" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                  <img src="/img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
+                  <img src="img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
                   </a>
               `,
               },
@@ -180,7 +133,7 @@ const config = {
               {
                 html: `
                     <a href="https://groups.google.com/g/exceldna" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
+                    <img src="img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
                     </a>
                 `,
               },
@@ -196,14 +149,14 @@ const config = {
               {
                 html: `
                     <a href="https://github.com/Excel-DNA" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
+                    <img src="img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
                     </a>
                 `,
               },
               {
                 html: `
                     <a href="mailto:govert@dnakode.com" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
+                    <img src="img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
                     </a>
                 `,
               },

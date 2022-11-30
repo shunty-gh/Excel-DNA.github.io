@@ -14,10 +14,13 @@ function HomepageHeader() {
       <div className="container">
         <div className="container-grid">
           <div className="title-padding">
+            <img class="float-image" src="img/exceldnalogo.png" />
+            <br /><br /><br />
             <h1 className="hero__title">{siteConfig.title}</h1>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
           </div>
           <div>
+            <br /><br /><br />
             <p>Excel-DNA is an independent project that integrates .NET into Microsoft Excel to extend its native capabilities. Using C#, Visual Basic.NET or F#, it is possible to create a standalone add-in file (.xll) with high-performance user-defined functions (UDFs), custom ribbon interfaces, and much more!</p>
           </div>
         </div>

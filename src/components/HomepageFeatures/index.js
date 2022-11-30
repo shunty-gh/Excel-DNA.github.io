@@ -84,7 +84,7 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="intro-content">
-          <h2 className="text--center">Getting Started</h2>
+          <h1 className="text--center">Getting Started</h1>
           <p>The easiest way to make an Excel-DNA addin is to create a new project in Visual Studio:</p>
           <ol>
             <li>Select <b>Create a new project</b> and then select <b>Class Library</b> in either Visual Basic, C# or F#.</li>
@@ -165,17 +165,38 @@ export default function HomepageFeatures() {
         </div>
         <br />
         <div>
-          <h2 className="text--center">Testimonials</h2>
+            <h1 className="text--center">Getting Help</h1>
+            <p>For further help with Excel-DNA or to report an issue with the library, please feel free to contact us via our <a href="http://groups.google.com/group/exceldna" target="_blank" rel="noopener noreferrer">Excel-DNA Google Group</a>, which is our primary support channel. Within the Google Group, it is possible to find detailed, responsive help to queries and a searchable archive with over 5000 messages. </p>
+            <p>Excel-DNA was made freely available because of our enthusiasm for Excel and the .NET Framework. We are looking forward to help you get started, knowing that the initial steps could be daunting to some. All Excel-DNA questions are welcome!</p>
+            <h1 className="text--center">Supporting Excel-DNA</h1>
+            <p>Encouragement of future development of Excel-DNA can be achieved through:</p>
+            <ul class="">
+              <li>Corporate Support Agreements or; </li>
+              <li>Sponsoring the project via <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>.</li>
+            </ul>
+            <h2>Corporate Support Agreements</h2>
+            <p>Corporate users who are using the Excel-DNA library as part of their critical infrastructure, may want to enter a Corporate Support Agreement (see Testimonials section below). For an annual subscription fee. This will ensure: </p>
+            <ul class="">
+              <li>Continuity of the project, with ongoing development and maintenance.</li>
+              <li>Access to direct assistance and support in using the library.</li>
+              <li>Priority for bug-fixes and feature requests that you submit.</li>
+            </ul>
+            <p>For more details, please contact us by email: <a href="mailto:govert@dnakode.com?Subject=Excel-DNA%20Support%20Agreement" target="_blank" rel="noopener noreferrer">govert@dnakode.com</a></p>
+            <h2>Sponsorship</h2>
+            <p>Sponsoring the Excel-DNA project is greatly appreciated and can be made via GitHub at: <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">https://github.com/sponsors/Excel-DNA</a></p>
+        </div>
+        <div>
+          <h1 className="text--center">Testimonials</h1>
           <p>
             <a href="http://www.janestcapitcal.com" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="/img/jane-street-logo.png" /></a>
+            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/jane-street-logo.png" /></a>
             <br />
             <a href="http://www.janestcapital.com/" target="_blank" rel="noopener noreferrer">Jane Street</a> uses Excel-DNA.
           </p>
           <p>&nbsp;</p>
           <p>
             <a href="http://eqfltd.com" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="/img/eq_logo.png" /></a>
+            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/eq_logo.png" /></a>
             <br />
             "We migrated to Excel-DNA, which has simplified greatly our Excel interfacing. It is a superb product, superior to others we have used previously, and Govert is incredibly responsive and helpful in maintaining and improving it." - Alberto Cherubini, <a href="http://eqfltd.com/" target="_blank" rel="noopener noreferrer">EQ Finance</a>
           </p>
@@ -186,19 +207,19 @@ export default function HomepageFeatures() {
           <p>&nbsp;</p>
           <p>
             <a href="http://www.calcbench.com" target="_blank" rel="noopener noreferrer">
-              <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="/img/calcbench-logo.png" /></a>
+              <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/calcbench-logo.png" /></a>
               "I have never programmed with Excel and Excel-DNA allowed me build Calcbench's Excel Add-In in two weeks." - Andrew Kittredge, <a href="http://www.calcbench.com/" target="_blank" rel="noopener noreferrer">Calcbench</a>
           </p>
           <p>&nbsp;</p>
           <p>
             <a href="http://findynamics.com" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="/img/xbrl-analyst-logo.png" /></a>
+            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/xbrl-analyst-logo.png" /></a>
             "Excel-DNA is incredibly versatile and stable framework for building Excel add-ins and user-defined functions. With such a pivotal element in our project, we were very concerned about committing to Excel-DNA that was developed by an enthusiast. However, we quickly learned that Govert has created an outstanding open source project; that he is keen on helping with any challenging questions and that the community is active enough to sustain a healthy evolution of Excel-DNA." - Ilya Vadeiko, <a href="http://findynamics.com/" target="_blank" rel="noopener noreferrer">FinDynamics</a>
           </p>
           <p>&nbsp;</p>
           <p>
             <a href="http://solution7.co.uk" target="_blank" rel="noopener noreferrer">
-            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="/img/s7logo.png" /></a>
+            <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/s7logo.png" /></a>
             "Excel-DNA is the open source project that quietly delivers a robust and simple to use extensibility framework for Microsoft Excel. When we felt we had outgrown VBA, no longer wanted the complexity of C++ and were thoroughly fed up with VSTO, Excel-DNA seemed a great choice and we haven't been let down.
           </p>
           <p>
