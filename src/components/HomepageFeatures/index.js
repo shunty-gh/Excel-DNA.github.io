@@ -85,7 +85,8 @@ export default function HomepageFeatures() {
       <div className="container">
         <div className="intro-content">
           <h1 className="text--center">Getting Started</h1>
-          <p>The easiest way to make an Excel-DNA addin is to create a new project in Visual Studio:</p>
+          <p>The easiest way to make an Excel-DNA addin is to create to follow these simple steps:</p>
+          <h3>Create a Project in Visual Studio</h3>
           <ol>
             <li>Select <b>Create a new project</b> and then select <b>Class Library</b> in either Visual Basic, C# or F#.</li>
             <li>Enter a name for the project.</li>
@@ -93,9 +94,8 @@ export default function HomepageFeatures() {
             <br />
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ftMz0tcc4wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
-          <p>Once a new project was created, do the following:</p>
+          <h3>Write the Addin Code</h3>
           <ol> 
-           
             <li>Depending on the language of choice, in the .csproj, .vbproj, or .fsproj file, change the value between the <i>TargetFramework</i> tags to <b>net6.0-windows</b>.</li>
             <li>Add the following under <i>&lt;/PropertyGroup></i>:
             <pre>&lt;ItemGroup&gt;<br />
@@ -149,10 +149,25 @@ export default function HomepageFeatures() {
                 </div>   
               </div>
             </li>
-            <li>Compile, load and use the newly created function in Excel:
+          </ol>
+          <h3>Compile and Run</h3>
+          <ol>
+            <li>To compile the solution, ensure to explicitly select <b>Build Solution</b>, under the <b>Build</b> menu item at the top menu bar. Alternatively, press the Ctrl+Shift+B key combination.</li>
+            <li>To run the code after compilation, select <b>Start Debugging</b>, under the <b>Debug</b> menu item at the top menu bar. Alternatively, press F5.</li>
+            <li>When the solution is running, Excel will open and a security notice will pop-up. Select the <b>Enable this add-in for this session only.</b> option.</li>
+            <li>In Excel, open a new workbook and use the newly created function:
             <pre>=SayHello("World!")</pre></li>
             <br />
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xCJqyLd7Je0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+          </ol>
+          <h3>Debug</h3>
+          <p>It is possible debug the solution through Visual Studio. To do so, follow these simple steps while the solution is running:</p>
+          <ol>
+          <li>In Visual Studio, navigate to the line of code that is required debugging.</li>
+          <li>Create a breakpoint by selecting <b>Toggle Breakpoint</b>, under the <b>Debug</b> menu item at the top menu bar. Alternatively, press F9. The line of code would be highlighted in red.</li>
+          <li>In Excel, use the function that is needed to be debugged. The execution of the function will be caught by Visual Studio at the breakpoint. The line of code would be highlighted in yellow.</li>
+          <li>In Visual Studio, inspect the code and change it as required. Once done, select <b>Continue</b>, under the <b>Debug</b> menu item at the top bar. Alternatively, press F5.</li>
+          <li>Finally, see the new results reflect in Excel upon completion of execution of the debugged function.</li>
           </ol>
         </div>
         <br />
