@@ -92,7 +92,7 @@ export default function HomepageFeatures() {
             <li>Enter a name for the project.</li>
             <li> Under Framework, select the <b>.NET 6.0 (Long-term support)</b> option.</li>
             <br />
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ftMz0tcc4wE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/6fY2JtXebsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
           <h3>Write the Addin Code</h3>
           <ol> 
@@ -158,7 +158,7 @@ export default function HomepageFeatures() {
             <li>In Excel, open a new workbook and use the newly created function:
             <pre>=SayHello("World!")</pre></li>
             <br />
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xCJqyLd7Je0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ew8C3Cm8EP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
           <h3>Debug</h3>
           <p>It is possible debug the solution through Visual Studio. To do so, follow these simple steps while the solution is running:</p>
@@ -168,6 +168,8 @@ export default function HomepageFeatures() {
           <li>In Excel, use the function that is needed to be debugged. The execution of the function will be caught by Visual Studio at the breakpoint. The line of code would be highlighted in yellow.</li>
           <li>In Visual Studio, inspect the code and change it as required. Once done, select <b>Continue</b>, under the <b>Debug</b> menu item at the top bar. Alternatively, press F5.</li>
           <li>Finally, see the new results reflect in Excel upon completion of execution of the debugged function.</li>
+          <br />
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pz915C0iZL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
         </div>
         <br />
@@ -178,28 +180,30 @@ export default function HomepageFeatures() {
             <Feature key={idx} {...props} />
           ))}
         </div>
-        <br />
+        <hr />
         <div>
-            <h1 className="text--center">Getting Help</h1>
-            <p>For further help with Excel-DNA or to report an issue with the library, please feel free to contact us via our <a href="http://groups.google.com/group/exceldna" target="_blank" rel="noopener noreferrer">Excel-DNA Google Group</a>, which is our primary support channel. Within the Google Group, it is possible to find detailed, responsive help to queries and a searchable archive with over 5000 messages. </p>
-            <p>Excel-DNA was made freely available because of our enthusiasm for Excel and the .NET Framework. We are looking forward to help you get started, knowing that the initial steps could be daunting to some. All Excel-DNA questions are welcome!</p>
-            <h1 className="text--center">Supporting Excel-DNA</h1>
-            <p>Encouragement of future development of Excel-DNA can be achieved through:</p>
-            <ul class="">
-              <li>Corporate Support Agreements or; </li>
-              <li>Sponsoring the project via <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>.</li>
-            </ul>
-            <h2>Corporate Support Agreements</h2>
-            <p>Corporate users who are using the Excel-DNA library as part of their critical infrastructure, may want to enter a Corporate Support Agreement (see Testimonials section below). For an annual subscription fee. This will ensure: </p>
-            <ul class="">
-              <li>Continuity of the project, with ongoing development and maintenance.</li>
-              <li>Access to direct assistance and support in using the library.</li>
-              <li>Priority for bug-fixes and feature requests that you submit.</li>
-            </ul>
-            <p>For more details, please contact us by email: <a href="mailto:govert@dnakode.com?Subject=Excel-DNA%20Support%20Agreement" target="_blank" rel="noopener noreferrer">govert@dnakode.com</a></p>
-            <h2>Sponsorship</h2>
-            <p>Sponsoring the Excel-DNA project is greatly appreciated and can be made via GitHub at: <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">https://github.com/sponsors/Excel-DNA</a></p>
+          <h1 className="text--center">Getting Help</h1>
+          <p>For further help with Excel-DNA or to report an issue with the library, please feel free to contact us via our <a href="http://groups.google.com/group/exceldna" target="_blank" rel="noopener noreferrer">Excel-DNA Google Group</a>, which is our primary support channel. Within the Google Group, it is possible to find detailed, responsive help to queries and a searchable archive with over 5000 messages. </p>
+          <p>Excel-DNA was made freely available because of our enthusiasm for Excel and the .NET Framework. We are looking forward to help you get started, knowing that the initial steps could be daunting to some. All Excel-DNA questions are welcome!</p>
+          <hr />
+          <h1 className="text--center">Supporting Excel-DNA</h1>
+          <p>Encouragement of future development of Excel-DNA can be achieved through:</p>
+          <ul class="">
+            <li>Corporate Support Agreements or; </li>
+            <li>Sponsoring the project via <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>.</li>
+          </ul>
+          <h2>Corporate Support Agreements</h2>
+          <p>Corporate users who are using the Excel-DNA library as part of their critical infrastructure, may want to enter a Corporate Support Agreement (see Testimonials section below). For an annual subscription fee. This will ensure: </p>
+          <ul class="">
+            <li>Continuity of the project, with ongoing development and maintenance.</li>
+            <li>Access to direct assistance and support in using the library.</li>
+            <li>Priority for bug-fixes and feature requests that you submit.</li>
+          </ul>
+          <p>For more details, please contact us by email: <a href="mailto:govert@dnakode.com?Subject=Excel-DNA%20Support%20Agreement" target="_blank" rel="noopener noreferrer">govert@dnakode.com</a></p>
+          <h2>Sponsorship</h2>
+          <p>Sponsoring the Excel-DNA project is greatly appreciated and can be made via GitHub at: <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">https://github.com/sponsors/Excel-DNA</a></p>
         </div>
+        <hr />
         <div>
           <h1 className="text--center">Testimonials</h1>
           <p>
