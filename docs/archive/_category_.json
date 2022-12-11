@@ -1,0 +1,7 @@
+{
+  "label": "Archive",
+  "link": {
+    "type": "generated-index",
+    "description": "Old unmaintainted documentation."
+  }
+}

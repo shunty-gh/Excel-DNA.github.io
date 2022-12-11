@@ -65,7 +65,7 @@ const config = {
         }, 
         items: [
           {  //docs start
-            to: 'docs/intro',
+            to: 'docs/introduction',
             label: 'Docs',
             position: 'left',
           }, //docs end
