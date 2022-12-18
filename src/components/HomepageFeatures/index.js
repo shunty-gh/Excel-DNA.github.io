@@ -179,7 +179,6 @@ export default function HomepageFeatures() {
           <h3>Distribution</h3>
           <p>In order to use the newly created add-in, users would require the .NET 6 runtime to be installed. Additionally, the correct architecutre (32bit or 64bit) of the installation should be taken into consideration.</p>
         </div>
-        <br />
         <hr />
         <div>
           <h1 className="text--center">Getting Help</h1>
