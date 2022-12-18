@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: "What and why - An introduction to .NET and Excel-DNA"
 ---
 Microsoft publishes a Software Development Kit (SDK) for Excel, that describes how to make an 'Excel add-in'. These are similar to .xla add-ins, but the code would typically be written in C or C++, and is compiled to binary file with a .xll extension. Such an Excel add-in is typically called an ".xll". Internally, it is just a normal Windows .dll file with a few pre-arranged exports so that Excel and the add-in can hook up.

@@ -1,0 +1,13 @@
+* You should only use the Excel COM object model from the main Excel thread. Thus _not_ from other threads, Tasks that you create, timer callbacks that you set up. It's safe to call it from a ribbon callback, of any macro (ExcelCommand). If you have a timer or some other thread that needs to do work back on the main thread, you can start a macro context running on the main thread with a call to ExcelAsyncUtil.QueueAsMacro(...). This waits for Excel to be ready, then runs the delegate you pass. In there, you can use the object model.
+
+* Inside UDFs the situation is less clear. There used to be documentation from Microsoft indicating that Excel is not expecting the COM object model to be called from inside an .xll UDF (like those from Excel-DNA). But it seems to work fine to create and read Range object etc. inside the UDF context - I've not heard of problems, so I think it's OK. Of course there are still restrictions in what you can do inside a UDF - basically you can't change the workbook, write to cells etc. But that makes sense and is the same in VBA.
+
+* You must get the root Application object from a call to ExcelDnaUtil.Application. That ensures you get the right Application object - calling New Application or CreateObject(...) might give you the Application object from another Excel instance.
+
+* You should never call Marshal.ReleaseComObject or Marshal.FinalReleaseComObject on any Excel COM object you're using in an Excel-DNA add-in. See https://stackoverflow.com/questions/37904483/as-of-today-what-is-the-right-way-to-work-with-com-objects/38170605#38170605
+
+* You don't have to worry about any "double dot" rules, or any restrictions on "method chaining". Using COM objects inside With and ForEach blocks is fine.
+
+* You can get a reference to the Primary Interop Assemblies by installing the ExcelDna.Interop package (this gives you the COM object model up to Excel 2010, helping that you don't use features your users might not have, or blocking you from using new features, depending on your view), or by referencing the PIA assemblies directly from your machine.
+
+The ExcelReference type that Excel-DNA uses is not a COM object, and is really just a small handle to a worksheet region (wrapping the information we get from the C API). So you need no special management around this type, and can pass it between threads, store it in dictionaries etc. The ExcelReference GetValue / SetValue methods internally call the C API, so they will only work in a context where the C API can be called, particularly on the main thread, in a macro or for reading sometimes inside a UDF.

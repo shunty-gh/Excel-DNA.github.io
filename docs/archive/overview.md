@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: "Overview"
 ---
 - The core library project can be found on [GitHub](https://github.com/Excel-DNA/ExcelDna), where the latest source versions are hosted.
@@ -52,34 +52,34 @@ Alternatively, get the full package [Excel-DNA Download](https://github.com/Exce
 
 ## How To's
 
-- [Excel-DNA Packing Tool](../guides-basic/exceldna-packing-tool) The packing utility allow you to pack your add-in into a single `.xll` file for easy distribution.
-- [Installing your add-in](../guides-basic/installing-your-add-in) and running generally.
-- Accepting [Range Parameters](../guides-basic/accepting-range-parameters-in-udfs) in UDFs.
-- [Integrating with VBA](../guides-basic/integrating-with-vba)
-- [Performing Asynchronous Work](../guides-basic/performing-asynchronous-work)
-- [Optional Parameters and Default Values](../guides-basic/optional-parameters-and-default-values)
-- [Keyboard Shortcut](../guides-basic/adding-keyboard-shortcut)
-- [Excel Programming Interfaces](../guides-basic/excel-programming-interfaces/introduction)
-    * [Using the Excel COM Automation Interfaces](../guides-basic/excel-programming-interfaces/using-the-excel-com-automation-interfaces)
-    * [Excel C API](../guides-basic/excel-programming-interfaces/excel-c-api)
-- [Ribbon Customization](../guides-basic/customizing-ribbons) and various ribbon links.
-- A note on [AutoClose and Detecting Excel Shutdown](../guides-basic/detecting-excel-shutdown-and-autoclose).
-- [Debugging Notes](../guides-basic/debugging-addins-and-exceldna)
-- [COM Server Support](../guides-basic/com-server-support)
-- Some notes on [FSharp Type Inference](../guides-basic/fsharp-type-inference), and [FSharp Standalone Assemblies](../guides-basic/fsharp-standalone-assemblies).
-- [Asynchronous Functions](../guides-basic/asynchronous-functions)
-- [Asynchronous Functions with Tasks](../guides-basic/asynchronous-functions-with-tasks) example in VB.NET.
-- [Reactive Extensions for Excel](../guides-basic/reactive-extensions-for-excel)
-- [Dynamic delegate registration](../guides-basic/dynamic-delegate-registration) - an advances feature to implement runtime registration and function wrappers.
-- [User settings and the .xll.config file](../guides-basic/user-settings-and-the-xllconfig-file)
-- A step-by-step guide to build a new add-in using the NuGet package, and then [Configure NLog logging](../guides-basic/configuring-nlog-logging) for your add-in.
-- [Creating a help file](../guides-basic/creating-a-help-file)
-- [Returning 1-D Arrays](../guides-basic/returning-1-d-arrays)
-- [Async macro example - formatting the calling cell from a UDF](../guides-basic/async-macro-example-formatting-the-calling-cell-from-a-udf)
-- [Enumerating Excel COM Automation collections in VB.NET](../guides-basic/enumerating-excel-com-automation-collections)
-- [Modal dialog on new thread](../guides-basic/creating-a-threaded-modal-dialog)
-- [Utilizing custom XML parts in Excel Workbooks](../guides-basic/utilising-customXMLparts-in-excel-workbooks)
-- [Checking for updates and download of Excel-DNA Addins (or other .NET based programs)](../guides-basic/checking-and-downloading-updates-in-dotnet)
+- [Excel-DNA Packing Tool](../archive/guides/exceldna-packing-tool) The packing utility allow you to pack your add-in into a single `.xll` file for easy distribution.
+- [Installing your add-in](../archive/guides/installing-your-add-in) and running generally.
+- Accepting [Range Parameters](../archive/guides/accepting-range-parameters-in-udfs) in UDFs.
+- [Integrating with VBA](../archive/guides/integrating-with-vba)
+- [Performing Asynchronous Work](../archive/guides/performing-asynchronous-work)
+- [Optional Parameters and Default Values](../archive/guides/optional-parameters-and-default-values)
+- [Keyboard Shortcut](../archive/guides/adding-keyboard-shortcut)
+- [Excel Programming Interfaces](../archive/guides/excel-programming-interfaces/introduction)
+    * [Using the Excel COM Automation Interfaces](../archive/guides/excel-programming-interfaces/using-the-excel-com-automation-interfaces)
+    * [Excel C API](../archive/guides/excel-programming-interfaces/excel-c-api)
+- [Ribbon Customization](../archive/guides/customizing-ribbons) and various ribbon links.
+- A note on [AutoClose and Detecting Excel Shutdown](../archive/guides/detecting-excel-shutdown-and-autoclose).
+- [Debugging Notes](../archive/guides/debugging-addins-and-exceldna)
+- [COM Server Support](../archive/guides/com-server-support)
+- Some notes on [FSharp Type Inference](../archive/guides/fsharp-type-inference), and [FSharp Standalone Assemblies](../archive/guides/fsharp-standalone-assemblies).
+- [Asynchronous Functions](../archive/guides/asynchronous-functions)
+- [Asynchronous Functions with Tasks](../archive/guides/asynchronous-functions-with-tasks) example in VB.NET.
+- [Reactive Extensions for Excel](../archive/guides/reactive-extensions-for-excel)
+- [Dynamic delegate registration](../archive/guides/dynamic-delegate-registration) - an advances feature to implement runtime registration and function wrappers.
+- [User settings and the .xll.config file](../archive/guides/user-settings-and-the-xllconfig-file)
+- A step-by-step guide to build a new add-in using the NuGet package, and then [Configure NLog logging](../archive/guides/configuring-nlog-logging) for your add-in.
+- [Creating a help file](../archive/guides/creating-a-help-file)
+- [Returning 1-D Arrays](../archive/guides/returning-1-d-arrays)
+- [Async macro example - formatting the calling cell from a UDF](../archive/guides/async-macro-example-formatting-the-calling-cell-from-a-udf)
+- [Enumerating Excel COM Automation collections in VB.NET](../archive/guides/enumerating-excel-com-automation-collections)
+- [Modal dialog on new thread](../archive/guides/creating-a-threaded-modal-dialog)
+- [Utilizing custom XML parts in Excel Workbooks](../archive/guides/utilising-customXMLparts-in-excel-workbooks)
+- [Checking for updates and download of Excel-DNA Addins (or other .NET based programs)](../archive/guides/checking-and-downloading-updates-in-dotnet)
 
 ## Samples
 

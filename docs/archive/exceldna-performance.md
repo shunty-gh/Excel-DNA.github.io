@@ -1,6 +1,6 @@
 ---
-layout: page
 title: "Excel-DNA Performance"
+sidebar_position: 4
 ---
 With Excel-DNA you can create high-performance UDFs by using a restricted set of types, and taking responsibility for ensuring that exceptions are not leaked. Otherwise, ExcelDna is designed be flexible and make it easy to expose your functions safely - these extensions perform well but are not tuned for high-performance interop.
 

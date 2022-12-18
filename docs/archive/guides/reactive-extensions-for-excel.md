@@ -66,7 +66,7 @@ namespace ExcelDna.Integration.RxExcel
 ```
 
 
-(VB.NET version here:  [Reactive Extensions for Excel - VB.NET](Reactive-Extensions-for-Excel---VB.NET)).
+(VB.NET version here:  [Reactive Extensions for Excel - VB.NET](reactive-extensions-for-excel-vbnet)).
 
 - UDFs that hook up Observables then look like this:
 

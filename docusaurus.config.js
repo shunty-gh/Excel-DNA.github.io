@@ -39,13 +39,16 @@ const config = {
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        //blog: {
-          //showReadingTime: true,
+        blog: {
+          showReadingTime: true,
+          postsPerPage: 10,
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //},
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -121,7 +124,7 @@ const config = {
               {
               html: `
                   <a href="https://www.youtube.com/user/govertvd" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                  <img src="img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
+                  <img src="/TestDocs/img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
                   </a>
               `,
               },
@@ -133,7 +136,7 @@ const config = {
               {
                 html: `
                     <a href="https://groups.google.com/g/exceldna" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
+                    <img src="/TestDocs/img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
                     </a>
                 `,
               },
@@ -149,14 +152,14 @@ const config = {
               {
                 html: `
                     <a href="https://github.com/Excel-DNA" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
+                    <img src="/TestDocs/img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
                     </a>
                 `,
               },
               {
                 html: `
                     <a href="mailto:govert@dnakode.com" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
+                    <img src="/TestDocs/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
                     </a>
                 `,
               },

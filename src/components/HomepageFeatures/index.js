@@ -8,8 +8,7 @@ const FeatureList = [
     img: require('@site/static/img/dotnet.png').default,
     description: (
       <>
-        Excel-DNA is backed by powerful development tools (Visual Studio) and is accessible to many libraries. 
-        Integration with .NET opens new possibilties such as multi-threading, real-time data / streaming functions, and asynchronous functions.
+        Excel-DNA is a library that enables creation of Excel add-ins with .NET. Add-ins can be written in VB.NET, C# or F# (or a combination of these), using the Visual Studio IDE or a just a text editor.
       </>
     ),
   },
@@ -84,6 +83,12 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="intro-content">
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+          <hr />
           <h1 className="text--center">Getting Started</h1>
           <p>The easiest way to make an Excel-DNA addin is to create to follow these simple steps:</p>
           <h3>Create a Project in Visual Studio</h3>
@@ -171,22 +176,17 @@ export default function HomepageFeatures() {
           <br />
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pz915C0iZL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
+          <h3>Distribution</h3>
+          <p>In order to use the newly created add-in, users would require the .NET 6 runtime to be installed. Additionally, the correct architecutre (32bit or 64bit) of the installation should be taken into consideration.</p>
         </div>
         <br />
-        <hr />
-        <br />
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
         <hr />
         <div>
           <h1 className="text--center">Getting Help</h1>
           <p>For further help with Excel-DNA or to report an issue with the library, please feel free to contact us via our <a href="http://groups.google.com/group/exceldna" target="_blank" rel="noopener noreferrer">Excel-DNA Google Group</a>, which is our primary support channel. Within the Google Group, it is possible to find detailed, responsive help to queries and a searchable archive with over 5000 messages. </p>
           <p>Excel-DNA was made freely available because of our enthusiasm for Excel and the .NET Framework. We are looking forward to help you get started, knowing that the initial steps could be daunting to some. All Excel-DNA questions are welcome!</p>
           <hr />
-          <h1 className="text--center">Supporting Excel-DNA</h1>
+          <h1 id="support" className="text--center">Supporting Excel-DNA</h1>
           <p>Encouragement of future development of Excel-DNA can be achieved through:</p>
           <ul class="">
             <li>Corporate Support Agreements or; </li>
