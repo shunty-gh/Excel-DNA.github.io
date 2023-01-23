@@ -1,6 +1,9 @@
 ---
 title: "Returning 1-D Arrays"
 ---
+
+**NOTE: This guide only applies to old version of Excel that does not support Dynamic Arrays.** 
+
 By default, ExcelDna marshalls `object[]` (a 1D array) back to Excel as a 1 row, many column result.
 
 This will lead to unexpected results when someone tries to call an array function from a vertical range of cells. For example, if you call a function that returns the array {`a,b,c}` from three vertical cells, then the cells will show a, a, and a. If you call the function from a horizontal range, then you will see a, b, and c.
