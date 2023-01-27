@@ -55,7 +55,7 @@ private static async Task<double[]> PingTargetAsync(string target, int pingCount
 }
 ```
 
-### **Remarks**
+### Remarks
 
 The parameters of `AsyncTaskUtil.RunTask` are:
 
