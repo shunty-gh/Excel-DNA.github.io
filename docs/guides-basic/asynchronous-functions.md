@@ -8,7 +8,7 @@ Excel-DNA has a core implementation to support asynchronous functions. Two prima
 
 
 
-## Task-based async functions
+## Task-based Async Functions
 
 Task-based functions are the preferred way of async implementation. 
 
@@ -135,7 +135,7 @@ private static async Task<PingReply[]> PingTargetAsync(string target, int pingCo
 
 
 
-## RTD-based async functions
+## RTD-based Async Functions
 
 The RTD-based functions can also be used for async functionality. However, they are a less preferred method of async implementation.
 
