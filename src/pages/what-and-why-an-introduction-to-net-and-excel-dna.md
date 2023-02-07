@@ -1,7 +1,8 @@
 ---
-sidebar_position: 3
 title: "What and why - An introduction to .NET and Excel-DNA"
 ---
+# What and why - An introduction to .NET and Excel-DNA
+
 Microsoft publishes a Software Development Kit (SDK) for Excel, that describes how to make an 'Excel add-in'. These are similar to .xla add-ins, but the code would typically be written in C or C++, and is compiled to binary file with a .xll extension. Such an Excel add-in is typically called an ".xll". Internally, it is just a normal Windows .dll file with a few pre-arranged exports so that Excel and the add-in can hook up.
 
 Xll add-in have some advantages over .xla add-ins developed in VBA. They can define user-defined worksheet functions (UDFs) which run very fast and which can integrate with newer features like multi-threaded calculation in Excel 2007+, and asynchronous calculation in Excel 2010+. A disadvantage of xll add-ins is that they are hard to develop. Typically C or C++ is used, and there are some toolkits and a nice book to help you, but it's still hard.

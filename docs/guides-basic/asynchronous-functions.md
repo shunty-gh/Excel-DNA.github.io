@@ -6,18 +6,19 @@ Excel-DNA has a core implementation to support asynchronous functions. Two prima
 1. Task-based async functions (preferred) 
 2. RTD-based async functions
 
-
+It is worth noting that RTD-based functions use the same underlying mechanism as Task-based functions. However, it is easier to use Task-based functions as the asynchronous concept is abstracted.
 
 ## Task-based Async Functions
 
 Task-based functions are the preferred way of async implementation. 
 
-**NOTE:** Both [AsyncTaskUtil.cs](https://github.com/Excel-DNA/Registration/blob/master/Source/ExcelDna.Registration/Utils/AsyncTaskUtil.cs) and [Disposables.cs](https://github.com/Excel-DNA/Registration/blob/master/Source/ExcelDna.Registration/Utils/Disposables.cs) from [Excel-DNA's Registration repository](https://github.com/Excel-DNA/Registration)  must be included in the project's solution and add the following line at the top of your source code file: 
+Both [AsyncTaskUtil.cs](https://github.com/Excel-DNA/Registration/blob/master/Source/ExcelDna.Registration/Utils/AsyncTaskUtil.cs) and [Disposables.cs](https://github.com/Excel-DNA/Registration/blob/master/Source/ExcelDna.Registration/Utils/Disposables.cs) from [Excel-DNA Registration](https://github.com/Excel-DNA/Registration) library must be included in the project's solution. Once included, the following line must be added at the top of source code file: 
+
 ```csharp
 using ExcelDna.Registration.Utils;
 ```
 
- 
+**NOTE:** The [Excel-DNA Registration](https://github.com/Excel-DNA/Registration) helper is an extension library that is used to simplify (and modify) the function registration process at runtime. The helper includes conversions to assist in registering task-based async functions. For this example, the helper extensions library is not referenced but the required utility code is imported directly into the project. 
 
 ### Usage
 
