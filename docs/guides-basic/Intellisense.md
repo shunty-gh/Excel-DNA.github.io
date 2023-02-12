@@ -67,7 +67,17 @@ End Class
 <TabItem value="fsharp" label="F#">
 
 ```fsharp
-TO DO
+namespace TestFsIntelliSense
+
+open ExcelDna.Integration
+open ExcelDna.IntelliSense
+
+type IntelliSenseAddIn() =
+    interface IExcelAddIn with
+        member _.AutoOpen() =
+            IntelliSenseServer.Install()
+        member _.AutoClose() =
+            IntelliSenseServer.Uninstall()
 ```
 
 </TabItem>
