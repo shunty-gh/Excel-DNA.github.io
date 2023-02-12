@@ -136,7 +136,7 @@ const config = {
               {
                 html: `
                     <a href="https://groups.google.com/g/exceldna" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/TestDocs/img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
+                    <img src="/Website/img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
                     </a>
                 `,
               },
