@@ -17,7 +17,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Excel-DNA', // Usually your GitHub org/user name.
-  projectName: 'TestDocs', // Usually your repo name.
+  projectName: 'Website', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -124,7 +124,7 @@ const config = {
               {
               html: `
                   <a href="https://www.youtube.com/user/govertvd" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                  <img src="/TestDocs/img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
+                  <img src="/Website/img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
                   </a>
               `,
               },
@@ -152,14 +152,14 @@ const config = {
               {
                 html: `
                     <a href="https://github.com/Excel-DNA" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/TestDocs/img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
+                    <img src="/Website/img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
                     </a>
                 `,
               },
               {
                 html: `
                     <a href="mailto:govert@dnakode.com" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/TestDocs/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
+                    <img src="/Website/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
                     </a>
                 `,
               },
