@@ -17,7 +17,7 @@ const FeatureList = [
     img: require('@site/static/img/udf.png').default,
     description: (
       <>
-        With Excel-DNA it is possible to create customised functions that is supported by Excel's IntelliSense capabilities.
+        With Excel-DNA it is possible to create high-performance worksheet functions that integrate with Excel's calculatio model.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     img: require('@site/static/img/ribbon.png').default,
     description: (
       <>
-        Excel-DNA can enhance User Experience by creating in Excel custom UI components.
+        Excel-DNA add-ins can extend the Excel user interface with ribbon enhancements and custom task panes.
       </>
     ),
   },
