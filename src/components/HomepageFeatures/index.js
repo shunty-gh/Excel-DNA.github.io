@@ -17,7 +17,7 @@ const FeatureList = [
     img: require('@site/static/img/udf.png').default,
     description: (
       <>
-        With Excel-DNA it is possible to create high-performance worksheet functions that integrate with Excel's calculatio model.
+        With Excel-DNA it is possible to create new worksheet functions that integrate with Excel's calculation model.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const FeatureList = [
     img: require('@site/static/img/ribbon.png').default,
     description: (
       <>
-        Excel-DNA add-ins can extend the Excel user interface with ribbon enhancements and custom task panes.
+        Excel-DNA add-ins can also extend the Excel user interface with ribbon enhancements and custom task panes.
       </>
     ),
   },
@@ -186,21 +186,21 @@ export default function HomepageFeatures() {
           <p>Excel-DNA was made freely available because of our enthusiasm for Excel and the .NET Framework. We are looking forward to help you get started, knowing that the initial steps could be daunting to some. All Excel-DNA questions are welcome!</p>
           <hr />
           <h1 id="support" className="text--center">Supporting Excel-DNA</h1>
-          <p>Encouragement of future development of Excel-DNA can be achieved through:</p>
+          <p>Encouragement of future development of Excel-DNA, and access to direct support can be achieved through:</p>
           <ul class="">
-            <li>Corporate Support Agreements or; </li>
-            <li>Sponsoring the project via <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>.</li>
+             <li>Sponsoring the project via <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>, or</li>
+             <li>Corporate Support Agreements or; </li>
           </ul>
-          <h2>Corporate Support Agreements</h2>
-          <p>Corporate users who are using the Excel-DNA library as part of their critical infrastructure, may want to enter a Corporate Support Agreement (see Testimonials section below). For an annual subscription fee. This will ensure: </p>
+          <h2>Sponsorship</h2>
+          <p>Sponsoring the Excel-DNA project is greatly appreciated and a monthly or once-off payment can be made through GitHub at: <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">https://github.com/sponsors/Excel-DNA</a></p>
+	  <h2>Corporate Support Agreements</h2>
+          <p>Corporate users who are using the Excel-DNA library as part of their critical infrastructure, may want to enter a more formal and direct Corporate Support Agreement. For an annual subscription fee this will ensure: </p>
           <ul class="">
-            <li>Continuity of the project, with ongoing development and maintenance.</li>
+            <li>Continuity of the Excel-DNA project, with ongoing development and maintenance, adapting to new versions of Excel and .NET.</li>
             <li>Access to direct assistance and support in using the library.</li>
-            <li>Priority for bug-fixes and feature requests that you submit.</li>
+            <li>Priority for bug-fixes and feature requests.</li>
           </ul>
           <p>For more details, please contact us by email: <a href="mailto:govert@dnakode.com?Subject=Excel-DNA%20Support%20Agreement" target="_blank" rel="noopener noreferrer">govert@dnakode.com</a></p>
-          <h2>Sponsorship</h2>
-          <p>Sponsoring the Excel-DNA project is greatly appreciated and can be made via GitHub at: <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">https://github.com/sponsors/Excel-DNA</a></p>
         </div>
         <hr />
         <div>
