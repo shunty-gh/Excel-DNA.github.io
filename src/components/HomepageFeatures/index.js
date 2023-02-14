@@ -189,7 +189,7 @@ export default function HomepageFeatures() {
           <p>Encouragement of future development of Excel-DNA, and access to direct support can be achieved through:</p>
           <ul class="">
              <li>Sponsoring the project via <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">GitHub Sponsors</a>, or</li>
-             <li>Corporate Support Agreements or; </li>
+             <li>entering into a Corporate Support Agreement.</li>
           </ul>
           <h2>Sponsorship</h2>
           <p>Sponsoring the Excel-DNA project is greatly appreciated and a monthly or once-off payment can be made through GitHub at: <a href="https://github.com/sponsors/Excel-DNA" target="_blank" rel="noopener noreferrer">https://github.com/sponsors/Excel-DNA</a></p>
