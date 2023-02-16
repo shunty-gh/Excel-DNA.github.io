@@ -166,7 +166,7 @@ export default function HomepageFeatures() {
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ew8C3Cm8EP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
           <h3>Debug</h3>
-          <p>It is possible debug the solution through Visual Studio. To do so, follow these simple steps while the solution is running:</p>
+          <p>It is possible to debug the solution through Visual Studio. To do so, follow these simple steps while the solution is running:</p>
           <ol>
           <li>In Visual Studio, navigate to the line of code that is required debugging.</li>
           <li>Create a breakpoint by selecting <b>Toggle Breakpoint</b>, under the <b>Debug</b> menu item at the top menu bar. Alternatively, press F9. The line of code would be highlighted in red.</li>
