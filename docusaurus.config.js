@@ -129,7 +129,7 @@ const config = {
               {
               html: `
                   <a href="https://www.youtube.com/user/govertvd" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                  <img src="/Website/img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
+                  <img src="/img/youtube.png" alt="YouTube" width="20.42" height="14.4" style="margin-right:5px;" />govertvd
                   </a>
               `,
               },
@@ -141,7 +141,7 @@ const config = {
               {
                 html: `
                     <a href="https://groups.google.com/g/exceldna" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/Website/img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
+                    <img src="/img/google_groups.png" alt="Google Groups" width="16" height="16" style="margin-right:5px;" />exceldna
                     </a>
                 `,
               },
@@ -157,14 +157,14 @@ const config = {
               {
                 html: `
                     <a href="https://github.com/Excel-DNA" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/Website/img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
+                    <img src="/img/github.png" alt="GitHub" width="16" height="16" style="margin-right:5px;" />excel-dna
                     </a>
                 `,
               },
               {
                 html: `
                     <a href="mailto:govert@dnakode.com" target="_blank" rel="noreferrer noopener" class="footer__link-item"> 
-                    <img src="/Website/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
+                    <img src="/img/email.png" alt="GitHub" width="16" height="11" style="margin-right:5px;" />govert@dnakode.com
                     </a>
                 `,
               },
