@@ -8,20 +8,11 @@ To use the Excel COM object model from your macro or ribbon handler, you need to
 
 Otherwise you would reference an interop assembly that defines the COM types to your .NET project. You still get the right Application object from `ExcelDnaUtil.Application`, but now cast this to the type `Microsoft.Office.Interop.Excel.Application` and use it from there.
 
-There are different options for the interop assembly:
-
--  Use the version-specific official Primary Interop Assembly:
-    * [Excel 2010 PIA](http://www.microsoft.com/en-us/download/details.aspx?id=3508)
-
-- Install the "Excel-DNA.Interop" NuGet package, which gives you the Excel 2010 PIA assemblies.
-
-- Use the version-independent [NetOffice](https://github.com/netoffice) libraries.
-
-If you use the `Embed Interop Types=True` support in .NET 4 (the default when referencing a PIA under .NET 4), you need not ship any assembly with your add-in.
+The easiest way to reference the Interop assemblies is install [ExcelDna.Interop](https://www.nuget.org/packages/ExcelDna.Interop) NuGet package, which provides the Excel 2013 PIA assemblies.
 
 ## More info about Office versions and Interop Assemblies
 
-Just like VBA code, as long as you stick to the parts of the COM object model that are common across versions, nothing in the COM interop part will be version-specific. This means if you you the Excel 2010 interop assemblies, but use only parts of the COM object model that are also there under Excel 2007, your add-in will work fine under Excel 2007 too. In that sense, the COM stuff is all version-independent. It's exactly the same as with VBA.
+Just like VBA code, as long as you stick to the parts of the COM object model that are common across versions, nothing in the COM interop part will be version-specific. This means if you you the Excel 2013 interop assemblies, but use only parts of the COM object model that are also there under Excel 2007, your add-in will work fine under Excel 2007 too. In that sense, the COM stuff is all version-independent. It's exactly the same as with VBA.
 
 If you make a VBA add-in under Excel 2010, it will work under Excel 2003 too, as long as the parts of the object model you use are supported in both versions. In exactly the same way an Excel-DNA add-in that includes the NuGet `ExcelDna.Interop` package (which gives you the Excel 2010 interop assemblies) will work fine under Excel 2003.  You can reference (and even distribute with your add-in) the interop assembly for Excel 2010, and it will work fine under Excel 2003, for those parts of the object model that are common.
 

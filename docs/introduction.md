@@ -165,7 +165,7 @@ And if you could help put together some proper documentation, please contact me.
     * Keith Lewis has some modern C++ libraries for making .xlls, available on CodePlex at [https://archive.codeplex.com/?p=xll](https://archive.codeplex.com/?p=xll).
 
 ## Performance
-Information about the performance of Excel-DNA user-defined functions can be found on the [Excel-DNA Performance](exceldna-performance.md) page.
+Information about the performance of Excel-DNA user-defined functions can be found on the [Excel-DNA Performance](archive/exceldna-performance) page.
 
 ## More Details
 Excel-DNA is developed using .NET, and users have to install the freely available .NET Framework runtime. The integration is by an Excel Add-In (.xll) that exposes .NET code to Excel. The user code can be in text-based (.dna) script files (C#, Visual Basic or F#), or compiled .NET libraries (.dll). Excel-DNA supports both the .NET runtime version 2.0 (which is used by .NET versions 2.0, 3.0 and 3.5) and version 4. Add-ins can target either version of the runtime, and concurrent loading of both runtime versions into an Excel instance is supported.
@@ -201,5 +201,4 @@ The current version on NuGet is [Excel-DNA Latest], released in October 2022.
 * Migrating to .NET 6 from .NET 4
 * [Excel-DNA Project Templates](https://www.nuget.org/packages/ExcelDna.Templates/)
 * Comparison with other tools
-
 
