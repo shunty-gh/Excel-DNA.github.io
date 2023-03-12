@@ -2,33 +2,9 @@
 title: "Reactive Extensions for Excel"
 ---
 
-Excel-DNA has support for integrating the [Reactive Extensions](http://msdn.microsoft.com/en-us/data/gg577609.aspx) library (Rx) with Excel via RTD.
+Excel-DNA has support for integrating the [Reactive Extensions](https://github.com/dotnet/reactive) library (Rx) with Excel via RTD.
 
-- You have to call `ExcelAsyncUtil.Initialize()` in your `AutoOpen` for any of the Rx stuff to work.
-
-```csharp
-public class AsyncTestAddIn : IExcelAddIn
-{
-    public void AutoOpen()
-    {
-        // This call is required for the async function and Rx support.
-        ExcelAsyncUtil.Initialize();
-
-        // This is optional - allows a custom return value for Exceptions
-        // By default exceptions just return #VALUE
-        ExcelIntegration.RegisterUnhandledExceptionHandler(ex => "!!! EXCEPTION: " + ex.ToString());
-    }
-
-    public void AutoClose()
-    {
-    }
-}
-```
-
-
-- I created an adapter class – called `RxExcel` but I see it is still in the `RxAdapter.cs` file - to map the .NET 4 Rx types to the Excel-DNA fake types. The idea would be that any add-in doing Rx stuff would just include the RxExcel file.
-
-I need this because I still want to target .NET 2.0 with Excel-DNA, so the `System.IObservable` is not available.
+- To map the .NET Rx types to the Excel-DNA RTD-based mechanism, it is possible to use the following code:
 
 ```csharp
 using System;

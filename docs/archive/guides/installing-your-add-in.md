@@ -5,9 +5,13 @@ Ease of deployment is one of the great advantages of making your Excel add-ins u
 
 The issue addressed here is how to install your add-in into Excel, so that it will automatically load every time Excel is started.
 
+## .NET Runtime
+
+Excel-DNA supports add-in projects that target .NET Framework 4.x and/or .NET 6. When targeting .NET 6 the end-user must have the [.NET 6 Desktop runtime](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) installed.
+
 ## Packing
 
-First, you might find it useful to try the [Excel-DNA Packing Tool](exceldna-packing-tool.md) to create a single .xll for deployment.
+As part of the add-in compilation, Excel-DNA creates single file packed add-ins (for 32 and 64 bit Excel) under a `publish` directory. These packed addins contain all the required dependencies and can be opened on another computer.
 
 ## Security
 
@@ -15,15 +19,17 @@ Note that most Excel-DNA features do not require administrator rights to run, or
 
 Office implements a comprehensive security system, which is accessed via the _File->Options, Trust Center_ dialog. Your Excel-DNA add-ins are subject to the security restrictions configured in the Trust Center. To operate in a secure environment I suggest you sign the packed .xll (using the signtool utility) and incorporate the certificate into the Office Trust Center, along with the macro setting to allow only digitally signed macros to be loaded.
 
+As of March 2023, Microsoft is [testing an option whereby downloaded addins are blocked by default](https://insider.office.com/en-us/blog/block-untrusted-xll-add-ins-by-default). Such add-ins can be enabled according to [the instructions linked by the error message that Excel displays](https://support.microsoft.com/en-us/topic/excel-is-blocking-untrusted-xll-add-ins-by-default-1e3752e2-1177-4444-a807-7b700266a6fb). 
+
 ## Options to just run once
 
-- Run from Visual Studio.  Set Project > Proprties > Debug to run Excel.exe (full path) and make .xll file the command line parameter.  (And use a post build task to copy and rename the ExcelDna.xll to the bin/debug folder.)
+- Run from Visual Studio. Building the add-in project should set debug properties that run Excel and load the add-in ready for debugging.
 - Just manually File > Open the .xll file from Excel.
 - VBA `Application.RegisterXLL(...)` can open it.  (Workbooks.Open will not work.)
 
 ## Options to install permanently
 
-- In Excel, just File > Options > Addins.  Install as an ordinary addin, not as a COM add-in even though communication may be using COM.
+- In Excel, just File > Options > Add-ins.  Install as an ordinary addin, not as a COM add-in even though communication may be using COM.
 - From VBA do
     * Application.addins.Add `myfilename.xll`
     * Application.addins("myTitle").Installed = True.  Title is defined by .dna file Name="myTitle", not necessarily the file name.

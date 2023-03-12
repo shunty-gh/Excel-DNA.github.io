@@ -4,14 +4,18 @@ title: "COM Server Support"
 Functions and macros created in an Excel-DNA add-in can be called directly from Excel VBA by using Application.Run(...). However, .NET also supports creating rich object models that are exported as COM libraries, which can be Tools->Referenced in VBA. Excel-DNA has some advanced support to host COM-exported objects from Excel-DNA add-ins, giving some advantages over the regular .NET ‘Register for COM interop’ hosting approach:
 
 - COM objects that are created via the Excel-DNA COM server support will be active in the same AppDomain as the rest of the add-in, allowing direct shared access to static variables, internal caches etc.
+
 - COM registration for classes hosted by Excel-DNA does not require administrative access (even when registered via RegSvr32.exe).
-- Everything needed for the COM server can be packed in a single-file .xll add-in, including the type library used for IntelliSense support in VBA.
-Mikael Katajamäki has written some detailed tutorial posts on his [Excel in Finance](http://mikejuniperhill.blogspot.com/) blog that explore this Excel-DNA feature, with detailed explanation, step-by-step instructions, screen shots and further links. See:
+
+- Everything needed for the COM server can be packed in a single-file .xll add-in, including the type library used for IntelliSense support in VBA. 
+
+In addition to the description below, there is a sample project and a step-by-step instructions in the [Excel-DNA Samples repository](https://github.com/Excel-DNA/Samples/tree/master/DnaComServer). Note that these techniques would works equally well with code written in VB.NET, allowing you to port VB/VBA libraries to VB.NET with Excel-DNA and then use these from VBA.
+
+Mikael Katajamäki has written some detailed tutorial posts on his [Excel in Finance](http://mikejuniperhill.blogspot.com/) blog that explore this Excel-DNA feature, with detailed explanation, step-by-step instructions, screen shots, and further links. Note that these project descriptions do not use the Excel-DNA Nuget packages. Therefore, the project layout is not current however, the implementation might still be instructive:
 
 - [Interfacing C# and VBA with Excel-DNA (no intellisense support)](http://mikejuniperhill.blogspot.com/2014/03/interfacing-c-and-vba-with-exceldna-no.html)
-- [Interfacing C# and VBA with Excel-DNA (with intellisense support)](http://mikejuniperhill.blogspot.com/2014/03/interfacing-c-and-vba-with-exceldna_16.html)
 
-Note that these techniques would works equally well with code written in VB.NET, allowing you to port VB/VBA libraries to VB.NET with Excel-DNA and then use these from VBA.
+- [Interfacing C# and VBA with Excel-DNA (with intellisense support)](http://mikejuniperhill.blogspot.com/2014/03/interfacing-c-and-vba-with-exceldna_16.html)
 
 ----
 

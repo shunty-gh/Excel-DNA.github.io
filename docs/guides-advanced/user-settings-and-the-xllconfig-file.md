@@ -2,6 +2,8 @@
 title: "User Settings and the .xll.config File"
 ---
 
+**NOTE:** The details below are applicable only to add-ins targeting .NET Framework 4.x. With .NET 6, the XML-based config files are no longer automatically loaded. Additionally, the `System.Configuration.ConfigurationManager` has limited backward compatibility. It is recommended to use [Microsoft.Extensions.Configuration](https://learn.microsoft.com/en-us/dotnet/core/extensions/configuration) and related libraries to use `AppSettings.json` or XML-based configuration files.
+
 ## Basic Usage
 
 1. Make a file called `<TheAddInName>.xll.config` with this in:

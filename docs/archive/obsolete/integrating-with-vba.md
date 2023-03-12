@@ -1,7 +1,7 @@
 ---
 title: "Integrating with VBA"
 ---
-Excel-DNA can make it easy to call between .Net and VBA. This means existing VBA code need not be rewritten. And end users are likely to find VBA much easier to develop in.
+Excel-DNA can make it easy to call between .NET and VBA. This means existing VBA code need not be rewritten. And end users are likely to find VBA much easier to develop in.
 
 To do this, create an Excel-DNA project, and register the a class that will be the entry point from VBA as follows:
 

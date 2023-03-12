@@ -3,7 +3,7 @@ title: "Performing Asynchronous Work"
 ---
 It is important to only communicate with Excel when it is Ready. For example, if one displays a non modal dialog then the program may fail if it attempts to call a VBA routine in response to a button press while the user is also in the process of editing a cell. Intercepting Window Messages messages etc. can also produce errors even though they are on the main thread. And of course accessing Excel from a different thread is forbidden.
 
-The best approach is to enqueue such work to execute on the main Excel thread when it is ready.  Some support for initiating such cross-thread work is now (December 2012) implemented by Excel-DNA, and exposed as methods on the `ExcelDna.Integration.ExcelAsyncUtil` class.
+The best approach is to enqueue such work to execute on the main Excel thread when it is ready.  Some support for initiating such cross-thread work is now implemented by Excel-DNA, and exposed as methods on the `ExcelDna.Integration.ExcelAsyncUtil` class.
 
 To try it you need to
 - call `ExcelAsyncUtil.Initialize()` in your `AutoOpen()`.
