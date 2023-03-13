@@ -1,6 +1,9 @@
 ---
 title: "COM Server Support"
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 Functions and macros created in an Excel-DNA add-in can be called directly from Excel VBA by using Application.Run(...). However, .NET also supports creating rich object models that are exported as COM libraries, which can be Tools->Referenced in VBA. Excel-DNA has some advanced support to host COM-exported objects from Excel-DNA add-ins, giving some advantages over the regular .NET ‘Register for COM interop’ hosting approach:
 
 - COM objects that are created via the Excel-DNA COM server support will be active in the same AppDomain as the rest of the add-in, allowing direct shared access to static variables, internal caches etc.
@@ -25,6 +28,9 @@ These classes are (persistently) registered by calling `regsvr32 <MyAddin>.xll` 
 unregistered by `regsvr32 /u <MyAddin>.xll` or by `ComServer.DllUnregisterServer()`.
 
 Following are short examples both in C-Sharp and VB, these only demonstrate the unreferenced (late-bound) technique:
+
+<Tabs>
+<TabItem value="csharp" label="C#">
 
 ```csharp
 using ExcelDna.Integration;
@@ -56,9 +62,10 @@ class ExcelAddin : IExcelAddIn
 }
 ```
 
-The same in VB.NET
+</TabItem>
+<TabItem value="vbnet" label="VB.Net">
 
-```vb
+```vbnet
 Imports ExcelDna.Integration
 Imports ExcelDna.ComInterop
 Imports System.Runtime.InteropServices
@@ -87,6 +94,11 @@ Public Class AddInEvents
     End Sub
 End Class
 ```
+
+</TabItem>
+
+</Tabs>
+
 
 ```xml
 <DnaLibrary Name="ComAddin" RuntimeVersion="v4.0">
