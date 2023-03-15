@@ -22,37 +22,21 @@ using ExcelDna.Registration.Utils;
 
 ### Usage
 
-* The following example, accepts a target IP/hostname (string) and the number of times to ping (int), and returns an array (object[]) of round trip times for each ping. The asynchronous UDF should call `AsyncTaskUtil.RunTask` as follows:
+* The following example, accepts a target URL (string) and returns a string (object) of characters that was downloaded from the given target URL. The asynchronous UDF should call `AsyncTaskUtil.RunTask` as follows:
 
 ```csharp
 //The main function that is exposed to Excel.
-public static object TaskedPingTarget(string target, int pingCount)
+public static object DownloadStringFromURL(string url)
 {
-    var functionName = nameof(TaskedPingTarget);
-    var parameters = new object[] { target, pingCount };
+    var functionName = nameof(DownloadStringFromURL);
+    var parameters = new object[] { url }; 
+    HttpClient myHttpClient = new HttpClient();
     
-    //The task to run is an anonymous async function. 
-    //All it does is call the asyncronous Task - PingTargetAsync.
     return AsyncTaskUtil.RunTask(functionName, parameters, async () =>
     {
-        return await PingTargetAsync(target, pingCount);
-    });
-}
-
-//The actual asyncronous payload to execute. This function is not exposed to Excel.
-private static async Task<double[]> PingTargetAsync(string target, int pingCount)
-{
-    Ping ping = new Ping();
-    PingReply[] replies = new PingReply[pingCount];
-    double[] roundTrips = new double[replies.Length];
-
-    for (int i = 0; i < pingCount; i++)
-    {
-        replies[i] = await ping.SendPingAsync(target);
-        roundTrips[i] = replies[i].RoundtripTime;
-    }
-
-    return roundTrips;
+        //The actual asyncronous block of code to execute.
+        return await myHttpClient.GetStringAsync(url);
+    })
 }
 ```
 
