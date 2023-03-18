@@ -116,15 +116,15 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: 'getting-started/installation',
+                to: '/docs/getting-started/installation',
               },
               {
                 label: 'Guides - Basic',
-                to: 'guides-basic/tempbasicguide',
+                to: '/docs/category/guides---basic',
               },
               {
                 label: 'Guides - Advanced',
-                to: 'guides-advanced/tempadvancedguide',
+                to: '/docs/category/guides---advanced',
               },
               {
               html: `
