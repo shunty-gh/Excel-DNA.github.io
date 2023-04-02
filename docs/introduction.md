@@ -24,6 +24,42 @@ Most managed UDF assemblies developed for Excel Services can be exposed to the E
 
 The latest release - [Excel-DNA Latest] - includes support for both RTD-based asynchronous worksheet functions (Excel 2002 and later) and native Excel asynchronous functions (Excel 2010 and later). The RTD-based asynchronous support is designed to (optionally) integrate with the .NET 4.0 Task-based operations, as well as the Reactive Extensions library, allowing IObservables to be exposed as 'live' worksheet UDFs - (thus 'RxExcel'). The language-specific support for asynchronous functions in C# 5, Visual Basic 11 and F# 2.0 can be easily integrated with the Excel-DNA asynchronous interfaces.
 
+### Are there no other ways to create Excel add-ins with .NET? Why should I use Excel-DNA?
+
+There are a few different ways of making Excel add-ins with .NET, but Excel-DNA has unique advantages. For starters, these are the different kinds of Excel add-ins that can be created with .NET:
+
+* VSTO
+* COM add-in
+* C API
+* Other libraries (e.g. NetOffice, Add-In Express, FCell)
+
+**Where does Excel-DNA fit in?**
+
+Excel-DNA brings together all three parts that are needed to make a great Excel add-in with .NET - the native Excel C API, the COM object model and the .NET runtime.
+
+### Should I not just stick to the official Microsoft tools for making Excel add-ins, rather than relying on a third-party tool?
+
+Using only Microsoft's tools makes it hard to create powerful and full-featured Excel add-ins with .NET that work in different Excel versions, and that are easy to deploy. Some of the problems are:
+
+* Microsoft has no official support for using the native Excel C API in .NET add-ins
+* VSTO has no support for making user-defined worksheet functions
+* Automation add-ins can provide UDF, but have poor performance, and allow limited customization
+* VSTO and regular COM-based add-ins require administrative rights to install
+
+**What if I want to make an Excel add-in with Python, C or C++?**
+
+Excel-DNA is used for making Excel add-ins with .NET. For alternative programming languages, there are similar libraries that integrate with the native Excel C API, such as:
+
+* Python: PyXLL
+* C/C++: Xlw, XLL+
+* Modern C++: xll8.
+
+### What about VBA? Can Excel-DNA help me use my current VBA skills and still move to .NET?
+
+VB.NET is the newest member of the Visual Basic family. While sometimes overshadowed in popularity by C#, VB.NET is as powerful as C# (sometimes more!), can access all the same .NET libraries, and is fully supported for making Excel-DNA add-ins. Using VB.NET gives a degree of familiar syntax for those who are coming from VBA, requiring a gradual learning curve to get used to the few existing differences. However, rest assured that VB.NET provides access to the full power of .NET and Excel-DNA.
+
+Excel-DNA add-ins can also integrate with VBA code by creating custom COM libraries that can be called from VBA. One advantage in putting these libraries inside an Excel-DNA add-in is that they can be deployed without requiring registration with administrator privileges.
+
 ## Important Links
 The home page for Excel-DNA is at [http://www.excel-dna.net](http://www.excel-dna.net).
 
