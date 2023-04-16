@@ -27,11 +27,11 @@ Each project is inherently different however, at times the steps taken toward up
 	
 </Project>
 ```
-Notice that between the <TargetFramworks\> tags 2 values exist. By targeting both frameworks, the project can be built and run on both older Windows systems that support .NET Framework 4.7.2, as well as newer systems that support .NET 6.0. that is optimised specifically for Windows. depends on the
+Notice that between the <TargetFramworks\> tags 2 values exist. By targeting both frameworks, the project can be built and run on both older Windows systems that support .NET Framework 4.7.2, as well as newer systems that support .NET 6.0. that is optimised specifically for Windows.
 
 **Note:** Replacing the old XML format with the new SDK-style does not require the target framework to change. It is also important to remember that the targeted framework values are dependent on several factors, such as the features and APIs required by the project, the platform on which the application will be deployed, and the compatibility requirements of any libraries or dependencies used by the project.
 
-4. Reload the project by right-clicking on the project in Solution Explorer and selecting 'Reload Project':
+4. Reload the project by right-clicking on the project in Solution Explorer and then selecting 'Reload Project':
    ![Capture](./assets/sdk_style3.png) 
 
 5. A list of dependencies exists in the packages.config file:
@@ -52,7 +52,7 @@ Notice that between the <TargetFramworks\> tags 2 values exist. By targeting bot
    </ItemGroup>
    ```
 
-6. Delete the following files from the project as they are no longer needed:
+6. Delete the following files from the project as they are no longer required:
 
    * packages.json
    * RtdClock-IExcelObservable-AddIn.dna
