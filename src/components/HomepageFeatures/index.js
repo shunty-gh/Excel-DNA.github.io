@@ -177,7 +177,7 @@ export default function HomepageFeatures() {
           <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pz915C0iZL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true"></iframe>
           </ol>
           <h3>Distribution</h3>
-          <p>In order to use the newly created add-in, users would require the .NET 6 runtime to be installed. Additionally, the correct architecutre (32bit or 64bit) of the installation should be taken into consideration.</p>
+          <p>In order to use the newly created add-in, users would require the .NET 6 runtime to be installed. Additionally, the correct architecture (32bit or 64bit) of the installation should be taken into consideration.</p>
         </div>
         <hr />
         <div>
