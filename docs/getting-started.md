@@ -22,7 +22,7 @@ The easiest way to make an Excel-DNA addin is to create to follow these simple s
 
    ```xml
    <ItemGroup>
-       <PackageReference Include="ExcelDna.Addin" Version="*-*"/>
+       <PackageReference Include="ExcelDna.Addin" Version="1.7.0"/>
    </ItemGroup>
    ```
    
