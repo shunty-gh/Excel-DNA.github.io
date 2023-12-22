@@ -16,7 +16,7 @@ Only a single .NET core runtime can be loaded into an Excel process (this one .N
   
 For .NET core we support the **RollForward** property, allowing the add-in developer to specify how the add-in loads the runtime or behaves if a .NET core runtime is already loaded into the process. The following [RollForward settings](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#rollforward) (with .NET core target versions) give useful options.
 
-* The default value (if the RollForward property is not specified) is `Minor`, (which is equivalent to `LatestPatch` since the .NET core runtime no longer publishes 'minor' version updates).
+The default value (if the RollForward property is not specified) is **`Minor`**, (which is equivalent to `LatestPatch` since the .NET core runtime no longer publishes 'minor' version updates).
 ```
 <TargetFramework>net6.0-windows</TargetFramework>
 <RollForward>Minor</RollForward>
@@ -25,8 +25,8 @@ This means the add-in will only run under .NET 6.
   * If no .NET runtime is loaded yet, the add-in will attempt to load .NET 6.
   * If .NET 6 is not installed, the add-in will fail to load.
   * If a newer version of the runtime is already loaded into the Excel process, this add-in will fail to load. 
- 
-* To allow forward-compatibility, the add-in can be built target .NET 6.0 and set `RollForward' to `Major`.
+
+To allow forward-compatibility, the add-in can be built target .NET 6.0 and set `RollForward` to **`Major`**.
 ```
 <TargetFramework>net6.0-windows</TargetFramework>
 <RollForward>Major</RollForward>
@@ -36,7 +36,7 @@ This means the add-in will load into .NET 6 and newer version of .NET, but will 
   * If .NET 6 is not installed but a newer version of .NET is installed (e.g. .NET 8), the add-in will load the next available higher major version.
   * If a newer version of the runtime (e.g. .NET 8) is already loaded into the Excel process, the add-in will load and use that version.
  
-* To allow for compatibility with a preference for the newest version, the add-in can be built target .NET 6.0 and set `RollForward' to `LatestMajor`.
+To allow for compatibility with a preference for the newest version, the add-in can be built target .NET 6.0 and set `RollForward` to **`LatestMajor`**.
 ```
 <TargetFramework>net6.0-windows</TargetFramework>
 <RollForward>LatestMajor</RollForward>
@@ -44,5 +44,5 @@ This means the add-in will load into .NET 6 and newer version of .NET, but will 
 This means the add-in will load into .NET 6 and newer version of .NET, but will prefer to load the newest version of .NET available. Thus
   * If no .NET runtime is loaded yet, the newest installed version of .NET will be loaded (at least .NET 6).
   * If any version of the runtime from .NET 6 or newer is already loaded into the Excel process, the add-in will load and use that version.
-  
+
   
