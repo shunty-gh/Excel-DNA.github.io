@@ -14,8 +14,7 @@ Targeting .NET core runtimes, .NET 6 (v6.0.2+) to .NET 8 are supported. This req
 
 Only a single .NET core runtime can be loaded into an Excel process (this one .NET core runtime can be loaded together with the .NET Framework 4.x runtime). For an add-in developer, this means the choice of runtime can impact, and be impacted, by other add-ins targeting .NET core versions.
   
-For .NET core we support the **RollForward** property, allowing the add-in developer to specify how the add-in loads the runtime or behaves if a .NET core runtime is already loaded into the process. The following RollForward settings (with .NET core target versions) give useful options.
-https://learn.microsoft.com/en-us/dotnet/core/versions/#net-runtime-compatibility
+For .NET core we support the **RollForward** property, allowing the add-in developer to specify how the add-in loads the runtime or behaves if a .NET core runtime is already loaded into the process. The following [RollForward settings](https://learn.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props#rollforward) (with .NET core target versions) give useful options.
 
 * The default value (if the RollForward property is not specified) is `Minor`, (which is equivalent to `LatestPatch` since the .NET core runtime no longer publishes 'minor' version updates).
 ```
