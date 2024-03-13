@@ -206,6 +206,12 @@ export default function HomepageFeatures() {
         <div>
           <h1 className="text--center">Testimonials</h1>
           <p>
+            <a href="https://ycharts.com/" target="_blank" rel="noopener noreferrer">
+              <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/ycharts.png" /></a>
+              "Excel-DNA is one of the most impressive open-source projects in the space. Its flexibility and simplicity have allowed us to create a powerful Excel Addin with a small team." - Kevin Fox, CTO, <a href="https://ycharts.com/" target="_blank" rel="noopener noreferrer">YCharts</a>
+          </p>
+          <p>&nbsp;</p>
+          <p>
             <a href="http://www.janestcapitcal.com" target="_blank" rel="noopener noreferrer">
             <img loading="lazy" class="float-image img_node_modules-@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module" src="img/jane-street-logo.png" /></a>
             <br />
