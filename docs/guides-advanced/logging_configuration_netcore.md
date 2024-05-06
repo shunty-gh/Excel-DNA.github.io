@@ -57,7 +57,7 @@ Alternatively, use the Windows Registry at:
 
 ### Environment Variable Script
 
-\`\`\`batch
+```batch
 @echo off
 REM Set Excel-DNA Logging Environment Variables Persistently
 
@@ -69,11 +69,11 @@ setx EXCELDNA_DIAGNOSTICS_FILE_NAME "ExcelDnaLog.txt"
 
 echo Excel-DNA Logging Environment Variables are set.
 pause
-\`\`\`
+```
 
 ### Registry Script
 
-\`\`\`reg
+```reg
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\ExcelDna\Diagnostics]
@@ -82,7 +82,25 @@ Windows Registry Editor Version 5.00
 "DebuggerLevel"="Error"
 "FileLevel"="Verbose"
 "FileName"="ExcelDnaLog.txt"
-\`\`\`
+```
+
+### IntelliSense logging
+
+Similar options can be used (with separate settings) for the IntelliSense extension:
+
+```batch
+setx EXCELDNA_INTELLISENSE_DIAGNOSTICS_SOURCE_LEVEL "Verbose" 
+setx EXCELDNA_INTELLISENSE_DIAGNOSTICS_DEBUGGER_LEVEL "Verbose" 
+setx EXCELDNA_INTELLISENSE_DIAGNOSTICS_FILE_LEVEL "Warning" 
+setx EXCELDNA_INTELLISENSE_DIAGNOSTICS_FILE_NAME "ExcelDnaIntelliSenseLog.txt"
+```
+
+The equivalent registry entries are under
+
+- \`HKEY_CURRENT_USER\Software\ExcelDna\IntelliSense\Diagnostics\`
+- \`HKEY_LOCAL_MACHINE\Software\ExcelDna\IntelliSense\Diagnostics\`
+
+Note that the LogDisplay is not configured for the IntelliSense extension.
 
 ## Conclusion
 
