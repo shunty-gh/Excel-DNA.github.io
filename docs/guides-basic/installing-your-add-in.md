@@ -51,6 +51,12 @@ oXL.Quit
 Set oXL = Nothing
 ```
 
+- A very simple method to install your addin is to copy your .XLL file into the XLSTART directory within the user's %APPDATA% folder. This will not normally need administrative permissions as it is user specific. You can find the name of the XlStart folder by looking in the registry:
+  * Key: `HKCU\Software\Microsoft\Office\$version\Common\General`  (eg for modern MS Office: `HKCU\Software\Microsoft\Office\16.0\Common\General`) 
+  * REG_SZ Value named: `XlStart`. By default the value of this entry, in GB based installations at least, is `XLSTART`
+  * The startup folder will then be found under `%APPDATA%\Microsoft\Excel\$value`  (eg `C:\Users\fred\AppData\Roaming\Microsoft\Excel\XLSTART` )
+  * By default any addins included in this folder will be automatically loaded on Excel startup
+  
 - Another option is to install your add-in when it is opened the first time, by running some code in your AutoOpen macro. This way, the user only has to double-click your add-in the first time, and it will load and install, and load in future sessions. Your AutoOpen might be something like:
 ```csharp
 public void AutoOpen()
